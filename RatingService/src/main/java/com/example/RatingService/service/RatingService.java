@@ -28,4 +28,8 @@ public class RatingService {
     public List<Rating> getRatingByHotelId(String hotelId){
         return ratingRepo.findByHotelId(hotelId);
     }
+
+    public void deleteById(String ratingId) {
+        ratingRepo.deleteById(ratingId);
+    }
 }

@@ -36,4 +36,10 @@ public class RatingController {
         return new ResponseEntity<>(ratingService.create(rating), HttpStatus.CREATED);
     }
 
+    @DeleteMapping("/delete/{ratingId}")
+    public String deleteById(@PathVariable String ratingId){
+        ratingService.deleteById(ratingId);
+        return "Deleted";
+    }
+
 }
