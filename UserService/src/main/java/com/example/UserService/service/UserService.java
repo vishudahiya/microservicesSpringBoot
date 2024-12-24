@@ -1,7 +1,6 @@
 package com.example.UserService.service;
 
 import com.example.UserService.external.services.HotelService;
-import com.example.UserService.external.services.RatingService;
 import com.example.UserService.modal.Hotel;
 import com.example.UserService.modal.Rating;
 import com.example.UserService.modal.User;
@@ -9,8 +8,6 @@ import com.example.UserService.repo.UserRepo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.client.loadbalancer.LoadBalanced;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
